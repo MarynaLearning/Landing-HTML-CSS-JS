@@ -5,10 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Croatia — Pearl of the Adriatic</title>
   <meta name="description" content="Explore Croatia: turquoise coasts, ancient walled cities, and island escapes. Plan your Adriatic adventure." />
-  <link rel="icon" type="image/jpeg" href="assets/rovinj.jpg" />
+  <link rel="icon" type="image/jpeg" href="assets/plitvice.jpg" />
+
+  <!-- Preload the hero image (it's a CSS background, so the browser can't
+       otherwise discover it until styles.css is fetched and parsed). This
+       is the LCP element, so fetch it immediately and with high priority. -->
+  <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Load the Google Fonts stylesheet without blocking initial render:
+       preload it, then swap its rel to "stylesheet" once fetched.
+       The <noscript> tag is a fallback for when JavaScript is disabled. -->
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" />
+  </noscript>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -68,7 +84,7 @@
           <div class="carousel-viewport">
             <ul class="carousel-track" data-carousel-track>
               <li class="slide">
-                <img src="assets/dubrovnik.jpg" alt="Old town of Dubrovnik above the Adriatic" loading="lazy" />
+                <img src="assets/dubrovnik.jpg" alt="Old town of Dubrovnik above the Adriatic" width="1280" height="823" loading="eager" decoding="async" />
                 <div class="slide-body">
                   <span class="slide-tag">South Dalmatia</span>
                   <h3>Dubrovnik</h3>
@@ -76,7 +92,7 @@
                 </div>
               </li>
               <li class="slide">
-                <img src="assets/plitvice.jpg" alt="Waterfalls and turquoise lakes at Plitvice" loading="lazy" />
+                <img src="assets/plitvice.jpg" alt="Waterfalls and turquoise lakes at Plitvice" width="960" height="1280" loading="lazy" decoding="async" />
                 <div class="slide-body">
                   <span class="slide-tag">National Park · Lika</span>
                   <h3>Plitvice Lakes</h3>
@@ -84,7 +100,7 @@
                 </div>
               </li>
               <li class="slide">
-                <img src="assets/split.jpg" alt="Aerial view of Split old town" loading="lazy" />
+                <img src="assets/split.jpg" alt="Aerial view of Split old town" width="960" height="1281" loading="lazy" decoding="async" />
                 <div class="slide-body">
                   <span class="slide-tag">Central Dalmatia</span>
                   <h3>Split</h3>
@@ -92,7 +108,7 @@
                 </div>
               </li>
               <li class="slide">
-                <img src="assets/hvar.jpg" alt="Houses of Hvar town by the harbour" loading="lazy" />
+                <img src="assets/hvar.jpg" alt="Houses of Hvar town by the harbour" width="1280" height="853" loading="lazy" decoding="async" />
                 <div class="slide-body">
                   <span class="slide-tag">Dalmatian Coast</span>
                   <h3>Hvar Island</h3>
@@ -100,7 +116,7 @@
                 </div>
               </li>
               <li class="slide">
-                <img src="assets/rovinj.jpg" alt="Rovinj harbour at sunset" loading="lazy" />
+                <img src="assets/rovinj.jpg" alt="Rovinj harbour at sunset" width="1280" height="720" loading="lazy" decoding="async" />
                 <div class="slide-body">
                   <span class="slide-tag">Istria</span>
                   <h3>Rovinj</h3>
