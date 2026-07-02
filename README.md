@@ -2,6 +2,12 @@
 
 A single-page travel landing page about Croatia, built with **plain HTML, CSS, and vanilla JavaScript** — no frameworks and no build step.
 
+## Performance
+
+Optimized for fast loading: right-sized images, a preloaded LCP hero image, lazy-loaded below-the-fold carousel slides, and asynchronously loaded fonts.
+
+![Lighthouse performance report](docs/lighthouse-performance.png)
+
 ## Features
 
 - **Responsive design** — mobile, tablet, and laptop/desktop layouts using fluid `clamp()` sizing and CSS grid.
@@ -59,12 +65,6 @@ This runs `npx serve .` and hosts the page at a local URL (e.g. `http://localhos
 - CSS3 (custom properties, grid, flexbox, media queries)
 - Vanilla JavaScript (ES6+, no dependencies)
 - Google Fonts: Playfair Display + Inter (loaded asynchronously so they don't block first paint)
-
-## Performance
-
-Optimized for fast loading: right-sized images, a preloaded LCP hero image, lazy-loaded below-the-fold carousel slides, and asynchronously loaded fonts.
-
-![Lighthouse performance report](docs/lighthouse-performance.png)
 
 ## Credits
 
