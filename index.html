@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Croatia — Pearl of the Adriatic</title>
+  <meta name="description" content="Explore Croatia: turquoise coasts, ancient walled cities, and island escapes. Plan your Adriatic adventure." />
+  <link rel="icon" type="image/jpeg" href="assets/rovinj.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">HR</span>
+        <span class="brand-text">Visit Croatia</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#destinations">Destinations</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#faq">FAQ</a>
+        <a href="#plan" class="nav-cta">Plan a trip</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow eyebrow-light">Pearl of the Adriatic</p>
+        <h1>Discover the Croatia<br />you've been dreaming of</h1>
+        <p class="hero-sub">
+          1,200 islands, medieval walled cities, thundering waterfalls, and some of
+          the clearest water in the Mediterranean. Your Adriatic escape starts here.
+        </p>
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">Explore destinations</a>
+          <a href="#plan" class="btn btn-ghost">Get a free itinerary</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>1,244</strong><span>Islands &amp; islets</span></li>
+          <li><strong>10</strong><span>UNESCO sites</span></li>
+          <li><strong>2,715h</strong><span>Sun per year</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Destinations / Carousel -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Featured destinations</p>
+          <h2>From Dubrovnik's walls to Plitvice's lakes</h2>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <ul class="carousel-track" data-carousel-track>
+              <li class="slide">
+                <img src="assets/dubrovnik.jpg" alt="Old town of Dubrovnik above the Adriatic" loading="lazy" />
+                <div class="slide-body">
+                  <span class="slide-tag">South Dalmatia</span>
+                  <h3>Dubrovnik</h3>
+                  <p>Walk the ancient city walls above the sea and lose yourself in marble-paved streets.</p>
+                </div>
+              </li>
+              <li class="slide">
+                <img src="assets/plitvice.jpg" alt="Waterfalls and turquoise lakes at Plitvice" loading="lazy" />
+                <div class="slide-body">
+                  <span class="slide-tag">National Park · Lika</span>
+                  <h3>Plitvice Lakes</h3>
+                  <p>Sixteen terraced lakes linked by cascading waterfalls and emerald-green pools.</p>
+                </div>
+              </li>
+              <li class="slide">
+                <img src="assets/split.jpg" alt="Aerial view of Split old town" loading="lazy" />
+                <div class="slide-body">
+                  <span class="slide-tag">Central Dalmatia</span>
+                  <h3>Split</h3>
+                  <p>Live inside a Roman palace where Diocletian's walls host cafés, markets, and nightlife.</p>
+                </div>
+              </li>
+              <li class="slide">
+                <img src="assets/hvar.jpg" alt="Houses of Hvar town by the harbour" loading="lazy" />
+                <div class="slide-body">
+                  <span class="slide-tag">Dalmatian Coast</span>
+                  <h3>Hvar Island</h3>
+                  <p>Lavender fields, hidden coves, and the sunniest island in the Adriatic.</p>
+                </div>
+              </li>
+              <li class="slide">
+                <img src="assets/rovinj.jpg" alt="Rovinj harbour at sunset" loading="lazy" />
+                <div class="slide-body">
+                  <span class="slide-tag">Istria</span>
+                  <h3>Rovinj</h3>
+                  <p>A pastel-hued fishing town rising straight out of the sea on the Istrian peninsula.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel-btn carousel-prev" data-carousel-prev aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-btn carousel-next" data-carousel-next aria-label="Next slide">&#8250;</button>
+          <div class="carousel-dots" data-carousel-dots role="tablist" aria-label="Slide navigation"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="section section-alt" id="experiences">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Ways to explore</p>
+          <h2>Experiences worth crossing the sea for</h2>
+        </div>
+        <div class="cards">
+          <a class="card" href="#plan" data-interest="Island hopping">
+            <div class="card-icon">⛵</div>
+            <h3>Island hopping</h3>
+            <p>Sail between Brač, Vis, and the Pakleni Islands, dropping anchor in secluded bays.</p>
+            <span class="card-link">Plan this trip →</span>
+          </a>
+          <a class="card" href="#plan" data-interest="History &amp; culture">
+            <div class="card-icon">🏛️</div>
+            <h3>Living history</h3>
+            <p>Wander Roman palaces, Venetian ports, and fortress towns still lived in today.</p>
+            <span class="card-link">Plan this trip →</span>
+          </a>
+          <a class="card" href="#plan" data-interest="Food &amp; wine">
+            <div class="card-icon">🍷</div>
+            <h3>Food &amp; wine</h3>
+            <p>Istrian truffles, fresh Adriatic seafood, and indigenous wines like Plavac Mali.</p>
+            <span class="card-link">Plan this trip →</span>
+          </a>
+          <a class="card" href="#plan" data-interest="Nature &amp; national parks">
+            <div class="card-icon">🌊</div>
+            <h3>Wild nature</h3>
+            <p>Waterfalls at Krka, sea caves on Biševo, and eight breathtaking national parks.</p>
+            <span class="card-link">Plan this trip →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ / Accordion -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="accordion" data-accordion>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>When is the best time to visit Croatia?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p>May, June, and September offer warm seas, sunny days, and thinner crowds than peak July–August. The shoulder season is ideal for sightseeing and island hopping.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do I need a visa?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p>Croatia is part of the EU and the Schengen Area. Many travelers can enter visa-free for up to 90 days, but check your country's specific requirements before booking.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What currency is used?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p>Croatia adopted the euro (€) in 2023. Cards are widely accepted, though carrying some cash is handy for small islands and local markets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>How do I get around the islands?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p>Regular car and passenger ferries connect the mainland to major islands, with faster catamarans in summer. For flexibility, many visitors combine a rental car with ferry crossings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan / Form -->
+    <section class="section section-plan" id="plan">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-light">Start planning</p>
+          <h2>Get a free personalized itinerary</h2>
+          <p class="section-lead">Tell us a little about your trip and our local experts will send tailored suggestions within 48 hours.</p>
+        </div>
+
+        <form class="form" data-form novalidate>
+          <p class="form-legend"><span class="req" aria-hidden="true">*</span> Required fields</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Ana Horvat" required aria-required="true" aria-describedby="err-name" />
+              <small class="error" id="err-name" data-error-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" aria-describedby="err-email" />
+              <small class="error" id="err-email" data-error-for="email"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="dates">Travel month <span class="req" aria-hidden="true">*</span></label>
+              <select id="dates" name="dates" required aria-required="true">
+                <option value="">Select a month</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>Not sure yet</option>
+              </select>
+              <small class="error" id="err-dates" data-error-for="dates"></small>
+            </div>
+            <div class="field">
+              <label for="travelers">Travelers <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="travelers" name="travelers" min="1" max="20" value="2" required aria-required="true" aria-describedby="err-travelers" />
+              <small class="error" id="err-travelers" data-error-for="travelers"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="interests">What are you most interested in? <span class="optional">(optional)</span></label>
+            <textarea id="interests" name="interests" rows="3" placeholder="Beaches, history, sailing, food & wine..."></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="err-consent" />
+            <span>I'd like to receive travel tips and my itinerary by email. <span class="req" aria-hidden="true">*</span></span>
+          </label>
+          <small class="error" id="err-consent" data-error-for="consent"></small>
+
+          <button type="submit" class="btn btn-primary btn-block">Send my request</button>
+          <p class="form-success" data-form-success hidden>✓ Thanks! Your request is on its way. Check your inbox soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="brand-mark">HR</span>
+        <span class="brand-text">Visit Croatia</span>
+      </div>
+      <p>Made for travelers dreaming of the Adriatic. This is a demo landing page.</p>
+      <p class="copyright">© 2026 Visit Croatia Demo · Photos via Wikimedia Commons</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "landing_croatia",
+  "version": "1.0.0",
+  "description": "Croatia travel landing page — plain HTML, CSS & vanilla JS",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "private": true
+}
