@@ -5,11 +5,14 @@
   "scripts": {
     "start": "npx serve .",
     "dev": "npx serve .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "private": true,
   "devDependencies": {
     "jsdom": "^25.0.1",
+    "prettier": "^3.9.6",
     "vitest": "^2.1.9"
   }
 }

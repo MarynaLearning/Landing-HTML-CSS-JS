@@ -75,7 +75,9 @@ function initCarousel() {
   let index = 0;
   let timer = null;
   let isHovered = false;
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reduceMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)',
+  ).matches;
 
   // Build one dot per slide
   const dots = slides.map((_, i) => {
@@ -95,7 +97,7 @@ function initCarousel() {
     index = (i + slides.length) % slides.length;
     track.style.transform = `translateX(-${index * 100}%)`;
     dots.forEach((dot, d) =>
-      dot.setAttribute('aria-selected', String(d === index))
+      dot.setAttribute('aria-selected', String(d === index)),
     );
   }
 
@@ -117,18 +119,36 @@ function initCarousel() {
     start();
   }
 
-  nextBtn.addEventListener('click', () => { next(); restart(); });
-  prevBtn.addEventListener('click', () => { prev(); restart(); });
+  nextBtn.addEventListener('click', () => {
+    next();
+    restart();
+  });
+  prevBtn.addEventListener('click', () => {
+    prev();
+    restart();
+  });
 
   // Pause autoplay while the pointer is over the carousel
-  root.addEventListener('mouseenter', () => { isHovered = true; stop(); });
-  root.addEventListener('mouseleave', () => { isHovered = false; start(); });
+  root.addEventListener('mouseenter', () => {
+    isHovered = true;
+    stop();
+  });
+  root.addEventListener('mouseleave', () => {
+    isHovered = false;
+    start();
+  });
 
   // Keyboard support when the carousel has focus
   root.setAttribute('tabindex', '0');
   root.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') { next(); restart(); }
-    if (e.key === 'ArrowLeft')  { prev(); restart(); }
+    if (e.key === 'ArrowRight') {
+      next();
+      restart();
+    }
+    if (e.key === 'ArrowLeft') {
+      prev();
+      restart();
+    }
   });
 
   // Pause when the tab is hidden
@@ -217,7 +237,8 @@ function initForm() {
     }
     if (field.type === 'number' && value) {
       const n = Number(value);
-      const min = Number(field.min), max = Number(field.max);
+      const min = Number(field.min),
+        max = Number(field.max);
       if (n < min || n > max) {
         setError(field, `Please enter a number between ${min} and ${max}.`);
         return false;
@@ -227,15 +248,21 @@ function initForm() {
     return true;
   };
 
-  const fields = Array.from(form.querySelectorAll('input, select, textarea'))
-    .filter((el) => el.required || el.name === 'interests');
+  const fields = Array.from(
+    form.querySelectorAll('input, select, textarea'),
+  ).filter((el) => el.required || el.name === 'interests');
 
   // Live-clear errors as the user fixes them
   fields.forEach((field) => {
-    const evt = field.type === 'checkbox' || field.tagName === 'SELECT' ? 'change' : 'input';
+    const evt =
+      field.type === 'checkbox' || field.tagName === 'SELECT'
+        ? 'change'
+        : 'input';
     field.addEventListener(evt, () => {
-      if (field.closest('.field')?.classList.contains('invalid') ||
-          field.name === 'consent') {
+      if (
+        field.closest('.field')?.classList.contains('invalid') ||
+        field.name === 'consent'
+      ) {
         validateField(field);
       }
     });
