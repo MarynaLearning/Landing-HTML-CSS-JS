@@ -4,7 +4,12 @@
   "description": "Croatia travel landing page — plain HTML, CSS & vanilla JS",
   "scripts": {
     "start": "npx serve .",
-    "dev": "npx serve ."
+    "dev": "npx serve .",
+    "test": "vitest run"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.9"
+  }
 }
