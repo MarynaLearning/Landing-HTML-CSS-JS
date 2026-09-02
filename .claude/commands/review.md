@@ -1,0 +1,1 @@
+Use the Explore agent gather the files, changed on the current branch. Then use code-reviewer agent. Hand back the issues grouped by severity.
