@@ -1,0 +1,13 @@
+{
+  "name": "maryna-tools",
+  "owner": {
+    "name": "Maryna"
+  },
+  "plugins": [
+    {
+      "name": "landing-croatia-tools",
+      "source": "./plugins/landing-croatia-tools",
+      "description": "Custom Claude Code commands for the Croatia landing page project"
+    }
+  ]
+}
