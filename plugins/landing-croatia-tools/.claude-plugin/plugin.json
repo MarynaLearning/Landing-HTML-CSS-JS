@@ -1,0 +1,8 @@
+{
+  "name": "landing-croatia-tools",
+  "description": "Custom Claude Code commands for the Croatia landing page project",
+  "version": "0.1.0",
+  "author": {
+    "name": "Maryna"
+  }
+}
